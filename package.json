@@ -22,6 +22,7 @@
   "homepage": "https://github.com/saragar710/social-networkapp2023#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "moment": "^2.29.4",
     "mongoose": "^8.0.0"
   }
 }
