@@ -21,7 +21,7 @@ module.exports = {
   },
   createUser(req, res) {
     User.create(req.body)
-      .then((user) => res.json(userdb))
+      .then((userdb) => res.json(userdb))
       .catch((err) => {
         console.log(err);
         return res.status(500).json(err);
@@ -34,7 +34,7 @@ module.exports = {
       { $set: req.body },
       { runValidators: true, new: true }
     )
-      .then((user) =>
+      .then((userdb) =>
         !userdb
           ? res.status(404).json({ message: "No User found with this ID!" })
           : res.json(userdb)
@@ -59,10 +59,10 @@ module.exports = {
       { $addToSet: { friends: req.params.friendId } },
       { runValidators: true, new: true }
     )
-      .then((user) =>
-        !user
+      .then((userdb) =>
+        !userdb
           ? res.status(404).json({ message: "No User found with this ID!" })
-          : res.json(user)
+          : res.json(userdb)
       )
       .catch((err) => res.status(500).json(err));
   },
