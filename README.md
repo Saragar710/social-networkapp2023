@@ -11,6 +11,9 @@ The dependencies are already installed. Kick the app off and all the information
 I have added a video submission to answer all your questions.
 
 https://github.com/Saragar710/social-networkapp2023
+
+https://drive.google.com/file/d/1QDEAUbQXa9iOmeU5E87N05M8olZnlvmC/view
+
 ## Credits
 I worked with at tutor.
 
